@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+form #menuHamburguesa {
+    display: none;
+}
+
+
+form .menuHamburguesa {
+    position: absolute;
+    color: white;
+    background-color: rgb(72, 72, 231);
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: end;
+    z-index: 1;
+    align-items: center;
+}
+
+form input:checked ~ nav {
+    transform: translateY(45px);
+}
+
+form nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 20px;
+    z-index: 2;
+    background-color: rgb(72, 72, 231);
+    height: 250px;
+    transform: translateY(-300px);
+    transition: .5s;
+}
